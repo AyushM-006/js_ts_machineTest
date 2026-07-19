@@ -16,13 +16,13 @@ class Movie {
     this.rating = rating;
   }
 
-  displayInfo(){
+  displayInfo() {
     console.log(this.movieName);
     console.log(this.movieId);
     console.log(this.rating);
-    console.log(this.genre); 
+    console.log(this.genre);
   }
 }
 
-const m1 = new Movie("ABCD",555,"Comedy",5)
-m1.displayInfo()
+const m1 = new Movie("ABCD", 555, "Comedy", 5);
+m1.displayInfo();
