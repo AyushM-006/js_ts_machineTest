@@ -1,36 +1,31 @@
-function bookTicket(status){
-     return new Promise((resolve, reject) => {
-        if(status)
-        {
-            resolve("Booked succesfully")
-        }
-        else{
-            reject("Booking failed")
-        }
-     });
-}       
+function bookTicket(status) {
+  return new Promise((resolve, reject) => {
+    if (status) {
+      resolve("Booked succesfully");
+    } else {
+      reject("Booking failed");
+    }
+  });
+}
 
 //Async Await
-async function TicketCounter(){
-    try {
-       const book = await bookTicket(1)
-    if(book){
-        console.log(book);
-        
-    }  
-    } catch (error) {
-        console.log(error);
+async function TicketCounter() {
+  try {
+    const book = await bookTicket(1);
+    if (book) {
+      console.log(book);
     }
-    
-    
+  } catch (error) {
+    console.log(error);
+  }
 }
-TicketCounter()
+TicketCounter();
 
 //then catch
-bookTicket().then((result) => {
+bookTicket()
+  .then((result) => {
     console.log(result);
-    
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log(err);
-    
-});
+  });
