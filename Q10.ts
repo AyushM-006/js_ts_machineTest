@@ -3,6 +3,7 @@ class Viewer {
   viewerId: Number;
   email: String;
   city: String;
+
   constructor(
     viewerName: String,
     viewerId: Number,
@@ -22,5 +23,5 @@ class Viewer {
   }
 }
 
-const v1 = new Viewer("John Doe", 123, "john.doe@example.com", "Mumbai");
+const v1 = new Viewer("John", 123, "john@example.com", "Mumbai");
 v1.displayInfo();

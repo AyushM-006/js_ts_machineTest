@@ -5,7 +5,6 @@ class ValueNotSet extends Error{
         this.name = "ValueNotSet"
     }
 }
-
 function name(){
     try{
         console.log(name);
@@ -17,4 +16,5 @@ function name(){
     
     
 }
+
 name()

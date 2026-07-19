@@ -19,7 +19,6 @@ class MovieTheatre {
   }
 
 }
-
 const v1 = new Viewer("Ayush",65451)
 const v2 = new Viewer("Harry",7784)
 

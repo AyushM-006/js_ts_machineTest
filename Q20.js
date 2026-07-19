@@ -1,4 +1,4 @@
-export const movie = {
+const movie = {
     movieName :"SpiderMan",
     genre:"Action",
     rating:7

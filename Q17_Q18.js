@@ -1,4 +1,5 @@
 //Q17
+
 const movie = [
   { name: "ABCD", ratings: 4 },
   { name: "Spyder", ratings: 6 },
@@ -11,10 +12,13 @@ function findHighestRatedMovie(movie) {
 
 console.log(findHighestRatedMovie(movie));
 
+
 //Q18
+
 function filterMovies(movie) {
     return movie.filter(m => m.ratings > 5);
 }
+
 console.log(filterMovies(movie));
 
 

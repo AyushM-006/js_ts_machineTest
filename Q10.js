@@ -17,5 +17,5 @@ class Viewer {
         console.log(this.city);
     }
 }
-const v1 = new Viewer("John Doe", 123, "john.doe@example.com", "Mumbai");
+const v1 = new Viewer("John", 123, "john@example.com", "Mumbai");
 v1.displayInfo();

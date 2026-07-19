@@ -21,7 +21,3 @@ const cinema = new MovieManagement();
 cinema.getPlatformType();
 console.log("Movie Count: " + cinema.addMovie());
 console.log("Movie Count: " + cinema.removeMovie());
-const ott = new MovieManagement();
-ott.getPlatformType();
-console.log("Movie Count: " + ott.addMovie());
-console.log("Movie Count: " + ott.removeMovie());
