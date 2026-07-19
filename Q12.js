@@ -14,5 +14,6 @@ class Booking {
         console.log(this.seatNumber);
     }
 }
+
 const book = new Booking(445, "Spyder", 4512);
 book.display();

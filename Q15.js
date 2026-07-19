@@ -2,6 +2,7 @@
 function getMovieInfo(info) {
     return info;
 }
+
 const movieName = "Inception";
 const movieId = 101;
 const genre = "Science Fiction";

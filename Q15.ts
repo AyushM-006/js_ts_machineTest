@@ -1,7 +1,6 @@
 function getMovieInfo<T>(info: T): T {
     return info;
 }
-
 const movieName: String = "Inception";
 const movieId: Number = 101;
 const genre: String = "Science Fiction";

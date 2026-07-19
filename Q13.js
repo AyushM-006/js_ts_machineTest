@@ -17,6 +17,7 @@ class Admin extends Person {
         console.log("The Person is Admin");
     }
 }
+
 const v1 = new Viewer();
 v1.getDetails();
 v1.getRole();

@@ -16,6 +16,7 @@ class Movie {
         console.log(this.rating);
         console.log(this.genre);
     }
+    
 }
 const m1 = new Movie("ABCD", 555, "Comedy", 5);
 m1.displayInfo();

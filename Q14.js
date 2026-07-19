@@ -15,5 +15,6 @@ class Viewer1 {
         }
     }
 }
+
 const v2 = new Viewer1("John Doe", 123);
 v2.bookTicket(true);
