@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Enter : <input type="text" name="" id="inputValue">
+    <button id="b1">Submit</button>
+
+    <br>
+    <hr>
+
+    <ol>
+        <li>Java</li>
+        <li>Php</li>
+        <li>JS</li>
+
+    </ol>
+
+    <script>
+        const b1 = document.getElementById("b1")
+
+
+        b1.addEventListener("click",()=>{
+            const ul = document.getElementById("ul")
+            const li = document.createElement("li")
+            const inputValue = document.getElementById("b1").value
+            
+            li.textContent = inputValue
+            ul.append(li)
+            localStorage.setItem("name",inputValue)
+
+
+        })  
+    </script>
+</body>
+</html>

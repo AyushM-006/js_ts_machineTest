@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Movie Feedback Form</h1>
+    <br />
+    <hr />
+    <center>
+      Name: <input type="text" required id="name" /> <br />
+      Email: <input type="email" name="" id="email" /><br />
+      Feedback :
+      <input type="textarea" name="" id="feedback" required /><br /><br />
+      <button id="b1">Submit</button>
+    </center>
+
+    <script>
+      const name = document.getElementById("name").value
+      const email = document.getElementById("email").value
+      const feedback = document.getElementById("feedback").value
+
+      const nameRegEx = /^[A-Za-z]+/
+      const emailRegEx = /[^\s@] +@[^\s@]+\.[^\s@]/
+      const feedbackRegEx = /{10,100}/
+
+      const b1 = document.getElementById("b1")
+      b1.addEventListener("click", () => {
+      if(!nameRegEx.test(name)){
+          alert("Name is Invalid")
+      } else if(!emailRegEx.test(email)){
+          alert("Email is Invalid")
+      }else if(!feedbackRegEx.test(feedback)){
+          alert("FeedBack is Invalid")
+      }else {
+          alert("Valid Details")
+      }
+
+      localStorage.setItem("viewerName",name)
+      localStorage.setItem("email",email)
+      localStorage.setItem("feedback",feedback)
+
+      })
+    </script>
+  </body>
+</html>

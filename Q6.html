@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Viewer Name : <input type="text" name="" id="name" />
+    <br />
+    Email : <input type="email" name="" id="email" />
+    <br />
+    Password : <input type="password" name="" id="pwd" />
+    <br />
+
+    <button id="b1">Submit</button>
+
+    <script>
+      const b1 = document.getElementById("b1");
+      b1.addEventListener("click", () => {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const pwd = document.getElementById("pwd").value;
+
+        const nameRegEx = /^[A-Za-z]+/;
+        const emailRegEx = /[^\s@] +@[^\s@]+\.[^\s@]/;
+        const pwdRegEx = /(.?*[A-Za-z])(.?*\d){8}/;
+
+        if (!nameRegEx.test(name)) {
+          alert("Name is Invalid");
+        } else if (!emailRegEx.test(email)) {
+          alert("Email is Invalid");
+        } else if (!pwdRegEx.test(pwd)) {
+          alert("Password is Invalid");
+        } else {
+          alert("Valid Details");
+        }
+
+        localStorage.setItem("viewerName", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("pwd", pwd);
+      });
+    </script>
+  </body>
+</html>
