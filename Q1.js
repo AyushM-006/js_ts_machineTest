@@ -1,8 +1,6 @@
-
 function print(){
     console.log(i);
 }
-
 function errorPropagator(){
     print()
 }
